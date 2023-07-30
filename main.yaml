@@ -1,0 +1,13 @@
+# Ansible Script to to change softaculous config.
+# This script is specially made to change the rebranding settings and disable enduser backup option.
+# Author: Sihabul Hasan
+# Created on: 25 July 2023
+---
+- name: Install Shared WHM Server
+  hosts: softaculous
+  become: yes
+  gather_facts: True
+  strategy: free # Run Tasks on all the servers as fast as possible without waiting for other
+    
+  roles:
+    - softaculous-config

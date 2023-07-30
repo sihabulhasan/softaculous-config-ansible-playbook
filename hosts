@@ -1,0 +1,5 @@
+[softaculous]
+server ip or hostname
+
+# if you are using custom port on your server
+server_ip_or_hostname ansible_port=port_number
