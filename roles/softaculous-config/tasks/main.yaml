@@ -1,0 +1,5 @@
+---
+- name: Copy the file
+    ansible.builtin.copy:
+      src: roles/softaculous-config/files/universal.custom.php
+      dest: /usr/local/cpanel/whostmgr/docroot/cgi/softaculous/enduser/
